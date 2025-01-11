@@ -207,13 +207,21 @@ npm run dev
 
 ### Testes:
 
-1. Para executar os testes unitários do backend:
+1. Navegue até o diretório do backend.
+
+```bash
+cd backend
+```
+
+2. Em .env.testing e phpunit.xml configure um banco de dados para teste.
+
+3. Para executar os testes de recurso do backend:
 
 ```bash
 php artisan test
 ```
 
-**Certifique-se de que todos os testes em tests/Unit passem com sucesso.**
+**Certifique-se de que todos os testes em tests/Feature passem com sucesso.**
 
 ## Notas Adicionais:
 
