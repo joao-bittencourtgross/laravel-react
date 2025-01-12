@@ -1,9 +1,10 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
 import { useStateContext } from "../contexts/contextprovider";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import axiosClient from "../axiosClient";
+import Logo from "../assets/img/logo.png";
 
 export default function DefaultLayout() {
   const { user, token, setUser, setToken } = useStateContext();
@@ -29,7 +30,9 @@ export default function DefaultLayout() {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Cadastro de Produtos</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <Image src={Logo} alt="Logo" className="w-25" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
