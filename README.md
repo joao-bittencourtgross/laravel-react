@@ -14,7 +14,7 @@ Laravel Sanctum: Para autenticação de usuários e gerenciamento de tokens. O S
 
 Laravel Purity: Para implementação de funcionalidades avançadas de filtragem, ordenação e paginação.
 
-PHPUnit: Utilizado para escrever e executar testes unitários.
+PHPUnit: Utilizado para escrever e executar testes.
 
 ## Funcionalidades:
 
@@ -44,11 +44,11 @@ Ordenação por nome, preço e quantidade e filtragem de produtos com base em st
 
 Suporte à paginação.
 
-### Testes Unitários:
+### Testes de Recursos:
 
 Testes abrangentes escritos para todas as operações CRUD no ProductController.
 
-Testes localizados no diretório tests/Unit.
+Testes localizados no diretório tests/Feature.
 
 ## Destaques da Estrutura de Pastas:
 
@@ -62,7 +62,7 @@ Request: Para validação e centralização de regras está em app/Http/Requests
 
 Controllers: Toda a lógica do CRUD está em app/Http/Controllers/Api/ProductController.php e a lógica de autenticação em app/Http/Controllers/Api/AuthController.php.
 
-Testes: Testes unitários estão em tests/Unit.
+Testes: Testes de recursos estão em tests/Feature.
 
 # Frontend - SPA React
 
